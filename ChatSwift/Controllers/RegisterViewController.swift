@@ -7,9 +7,12 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class RegisterViewController: UIViewController {
 
+    private let spinner=JGProgressHUD(style: .dark)
+    
     private var scrollView : UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.clipsToBounds = true
@@ -18,7 +21,7 @@ class RegisterViewController: UIViewController {
     
     private var imageView : UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "person.circle ")
+        imageView.image = UIImage(systemName: "person.circle")
         imageView.tintColor = .gray
         imageView.contentMode = .scaleAspectFit
         imageView.layer.masksToBounds=true
@@ -169,6 +172,7 @@ class RegisterViewController: UIViewController {
             return
         }
         
+        spinner.show(in: view)
         //Firebase register
         DatabaseManager.shared.userExists(with: email) {[weak self] exists in
             guard !exists else{
@@ -177,6 +181,9 @@ class RegisterViewController: UIViewController {
                 return
             }
             
+            DispatchQueue.main.async {
+                self?.spinner.dismiss()
+            }
             
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) {[weak self] authDataResult, error in
                 guard authDataResult != nil,error==nil else{

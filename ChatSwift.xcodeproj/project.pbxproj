@@ -18,6 +18,7 @@
 		BB4700C02AE8759A00C368EB /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4700BF2AE8759A00C368EB /* NewConversationViewController.swift */; };
 		BB4700C22AE875A700C368EB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4700C12AE875A700C368EB /* ProfileViewController.swift */; };
 		BB6D03122AEB1A70003BFF06 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6D03112AEB1A70003BFF06 /* DatabaseManager.swift */; };
+		BB8AE2B22AFACCAE00A10028 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8AE2B12AFACCAE00A10028 /* StorageManager.swift */; };
 		BBD0AF302AF1AD7300F447C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBD0AF2F2AF1AD7300F447C1 /* GoogleService-Info.plist */; };
 		BBD2DBDC2AE9BD350052D667 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2DBDB2AE9BD350052D667 /* Extensions.swift */; };
 		BBD560292AF26638005CADC8 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = BBD560282AF26638005CADC8 /* MessageKit */; };
@@ -46,6 +47,7 @@
 		BB4700BF2AE8759A00C368EB /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		BB4700C12AE875A700C368EB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BB6D03112AEB1A70003BFF06 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		BB8AE2B12AFACCAE00A10028 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		BBD0AF2F2AF1AD7300F447C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BBD2DBDB2AE9BD350052D667 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BBF586972AE861DE004EA7F6 /* ChatSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				BBF5869C2AE861DE004EA7F6 /* SceneDelegate.swift */,
 				BBD2DBDB2AE9BD350052D667 /* Extensions.swift */,
 				BB6D03112AEB1A70003BFF06 /* DatabaseManager.swift */,
+				BB8AE2B12AFACCAE00A10028 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				BBF5869D2AE861DE004EA7F6 /* SceneDelegate.swift in Sources */,
 				BB3DD7782AF28E5400DA4AA4 /* ChatViewController.swift in Sources */,
 				BB4700BC2AE8755D00C368EB /* PhotoViewerViewController.swift in Sources */,
+				BB8AE2B22AFACCAE00A10028 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

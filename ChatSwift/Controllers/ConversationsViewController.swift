@@ -32,7 +32,7 @@ class ConversationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tabBarController?.tabBar.isHidden = false
         navigationItem.rightBarButtonItem=UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(didTapComposeButton))
         
         view.addSubview(tableView)
@@ -41,7 +41,11 @@ class ConversationsViewController: UIViewController {
         fetchConversations()
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

@@ -132,6 +132,9 @@ class LoginViewController: UIViewController {
                 self?.spinner.dismiss()
             }
             let user=result.user
+            
+            UserDefaults.standard.set(email, forKey: "email")//to cache it and to get image and other things through this 
+            
             print("LoggedIn user \(user)")
             self?.navigationController?.dismiss(animated: true)
         }
